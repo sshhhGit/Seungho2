@@ -13,20 +13,19 @@ public class ShoppingbasketActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_shoppingbasket);
 
-        Button btnPrv = (Button)findViewById(R.id.btnPrv);
+        TextView[] tv = new TextView[]{findViewById(R.id.tv1), findViewById(R.id.tv1), findViewById(R.id.tv1), findViewById(R.id.tv1)
+                                       ,findViewById(R.id.tv1), findViewById(R.id.tv1), findViewById(R.id.tv1), findViewById(R.id.tv1)};
 
-        btnPrv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                TextView tv = (TextView)findViewById(R.id.tv);
-                Intent intent = getIntent();
-                intent.getExtras();
-                finish();
-            }
-        });
+        Button btnPrv = (Button)findViewById(R.id.btnPrv);
+        Intent intent = getIntent();
+        String coffee = intent.getExtras().getString("coffee");
+        for (int i = 0; i < tv.length; i++) {
+            if (tv[i].setText();)
+        }
+        tv.setText(coffee);
+        tv.setBackgroundColor();
 
     }
 }
