@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#BAA0E7"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="더조은 커피"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/btnSb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mOnClickSb"
+            android:text="장바구니"
+            android:layout_marginLeft="120dp"/>
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="35dp"
+                android:layout_marginTop="35dp">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginRight="35dp"
+                    android:text="ddddddd"/>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@mipmap/ic_launcher_round"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="35dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@mipmap/ic_launcher_round"/>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@mipmap/ic_launcher_round"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="35dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@mipmap/ic_launcher_round"/>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@mipmap/ic_launcher_round"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="35dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@mipmap/ic_launcher_round"/>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@mipmap/ic_launcher_round"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnPrv"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:text="이전"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:text="삭제"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:text="결제"/>
+    </LinearLayout>
+
+</LinearLayout>
