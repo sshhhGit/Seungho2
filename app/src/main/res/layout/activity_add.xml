@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#E18DF1"
+        android:gravity="left|center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="더조은 커피"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+
+
+
+
+    </LinearLayout>
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@android:id/tabhost"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tabCoffee"
+                    android:background="#B1A595"
+                    android:orientation="vertical" >
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#B1A595">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp"
+                                android:layout_marginTop="35dp">
+
+                                <Button
+                                    android:id="@+id/btnA_1"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick1"
+                                    android:text="아아"/>
+
+                                <Button
+                                    android:id="@+id/btnB_1"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick1"
+                                    android:text="뜨아"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp">
+
+                                <Button
+                                    android:id="@+id/btnC_1"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick1"
+                                    android:text="카페라떼"/>
+
+                                <Button
+                                    android:id="@+id/btnD_1"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick1"
+                                    android:text="카페모카"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp">
+
+                                <Button
+                                    android:id="@+id/btnE_1"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick1"
+                                    android:text="카푸치노"/>
+
+                                <Button
+                                    android:id="@+id/btnF_1"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick1"
+                                    android:text="콜드브루"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp"
+                                android:layout_marginLeft="37dp" >
+
+                                <Button
+                                    android:id="@+id/btnG_1"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick1"
+                                    android:text="마키아또"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#84AD88"
+                    android:id="@+id/tabTea">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#84AD88">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp"
+                                android:layout_marginTop="35dp">
+
+                                <Button
+                                    android:id="@+id/btnA_2"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick2"
+                                    android:text="녹차"/>
+
+                                <Button
+                                    android:id="@+id/btnB_2"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick2"
+                                    android:text="페퍼민트"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp">
+
+                                <Button
+                                    android:id="@+id/btnC_2"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick2"
+                                    android:text="캐모마일"/>
+
+                                <Button
+                                    android:id="@+id/btnD_2"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick2"
+                                    android:text="레몬"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp">
+
+                                <Button
+                                    android:id="@+id/btnE_2"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick2"
+                                    android:text="얼그레이"/>
+
+                                <Button
+                                    android:id="@+id/btnF_2"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick2"
+                                    android:text="유자"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp"
+                                android:layout_marginLeft="37dp" >
+
+                                <Button
+                                    android:id="@+id/btnG_2"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick2"
+                                    android:text="자몽"/>
+
+                                <Button
+                                    android:id="@+id/btnH_2"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:textSize="50dp"
+                                    android:onClick="mOnClick2"
+                                    android:text="사과유자"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#D8CF6D"
+                    android:id="@+id/tabAde">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#D8CF6D">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp"
+                                android:layout_marginTop="35dp">
+
+                                <Button
+                                    android:id="@+id/btnA_3"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="50dp"
+                                    android:text="수박주스"/>
+
+                                <Button
+                                    android:id="@+id/btnB_3"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:textSize="45dp"
+                                    android:text="레몬 에이드"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp">
+
+                                <Button
+                                    android:id="@+id/btnC_3"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="45dp"
+                                    android:text="자몽 에이드"/>
+
+                                <Button
+                                    android:id="@+id/btnD_3"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:textSize="45dp"
+                                    android:text="청포도에이드"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp">
+
+                                <Button
+                                    android:id="@+id/btnE_3"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="45dp"
+                                    android:text="체리콕"/>
+
+                                <Button
+                                    android:id="@+id/btnF_3"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:textSize="45dp"
+                                    android:text="라임 모히또"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp"
+                                android:layout_marginLeft="37dp" >
+
+                                <Button
+                                    android:id="@+id/btnG_3"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="45dp"
+                                    android:text="청포도모히또"/>
+
+                                <Button
+                                    android:id="@+id/btnH_3"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:textSize="50dp"
+                                    android:text="딸바주스"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </ScrollView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/tabBasket">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:padding="50dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp"
+                                android:layout_marginTop="35dp">
+
+                                <TextView
+                                    android:id="@+id/tv1"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="40dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/tv2"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:textSize="40dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp">
+
+                                <TextView
+                                    android:id="@+id/tv3"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="40dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/tv4"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:textSize="40dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp">
+
+                                <TextView
+                                    android:id="@+id/tv5"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="40dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/tv6"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:textSize="40dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_marginBottom="35dp">
+
+                                <TextView
+                                    android:id="@+id/tv7"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:layout_marginRight="35dp"
+                                    android:textSize="40dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/tv8"
+                                    android:layout_width="110dp"
+                                    android:layout_height="110dp"
+                                    android:textSize="40dp"
+                                    android:textStyle="bold"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="20dp"
+                            android:onClick="mOnClick3"
+                            android:text="삭제"/>
+
+                        <Button
+                            android:id="@+id/btnRmv"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="20dp"
+                            android:text="결제"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TabHost>
+</LinearLayout>
